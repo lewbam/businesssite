@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+// Customization
+
+// You can easily customize Bulma with your own variables.
+// Just uncomment the following block to see the result.
+
+
+//1. Import the initial variables
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+//2. Set your own initial variables
+//Update the blue shade, used for links
+$blue: #06bcef;
+// Add pink and its invert
+$paper: #d5d5d5;
+$pink-invert: #fff;
+// Update the sans-serif font family
+$family-sans-serif: "Helvetica", "Arial", sans-serif;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+$primary: $paper;
+$primary-invert: $pink-invert;
+$gap: 100px;
+
+// 4. Import the rest of Bulma
+$navbar-background-color: rgba(73, 73, 73, 0.7);
+$navbar-item-color: #fff;
+
+.elements {
+  background-color: $paper;
+  margin: 4px;
+  height: 200px;
+}
+
+.main-title {
+text-align: center;
+}
+
+.header-title {
+  font-family: helvetica;
+  font-weight: 800;
+  font-size: 10vw !important;
+  text-align: center;
+}
+
+.hero-body {
+  text-align: center;
+}
+
+.about {
+  padding: 10px;
+  margin: 20px;
+  font-family: helvetica;
+  h1 {
+    font-weight: 600;
+  }
+}
+.more-btn {
+  padding: 10px;
+  border: 3px solid white;
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+  font-family: helvetica;
+  font-size: 15px;
+  margin-top: 100px;
+  font-weight: 600;
+}
+
+// .down {
+//   width: 20px;
+//   align-items: flex-end;
+//   display: flex;
+//   justify-content: center;
+// }
+
+.hero {
+  background-color: black !important;
+  background-size: cover;
+}
+
+
+@import "../node_modules/bulma/bulma";
